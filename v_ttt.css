@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/440/572/small/abstract-red-speed-neon-light-effect-on-black-background-illustration-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cells{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3,1fr);
+    outline: black;
+    width: 300px;
+    height: 300px;
+    outline: 0;
+    color: white;
+    
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+
+}
+
+
+
+
+.cell:hover{
+    background-color: #16181a;
+    border-radius: 50%;
+    border: 3px;
+ 
+}
+
+.cell1,.cell2,.cell3{
+    border-top: none;
+}
+.cell1,.cell4,.cell7{
+    border-left: none;
+}
+.cell3,.cell6,.cell9{
+    border-right: none;
+}
+.cell7,.cell8,.cell9{
+    border-bottom: none;
+}
+
+
+.player{
+    display: flex;
+
+}
+
+
+
+#btn{
+    margin: 30px 30px;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 30%;
+    border-color: rgb(219, 0, 0);
+    border-width: 3px;
+    background-color: #16181a;
+}
+
+#h1{
+    padding: 30px 50px 0px 50px; 
+    color: rgb(255, 255, 255);
+    position: relative;
+ }
+ .result{
+    color: white;
+    position: absolute;
+    text-wrap: nowrap;
+    margin-top: 10px;
+}
